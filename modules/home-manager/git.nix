@@ -5,10 +5,11 @@ in
 {
   programs.git = {
     enable = true;
-    userName = cfg.full_name;
-    userEmail = cfg.email_address;
-    extraConfig = {
-      credential.helper = "store";
+    settings.user.name = cfg.full_name;
+    settings.user.email = cfg.email_address;
+    settings = {
+      credential.helper = "manager";
+      credential.credentialStore = "cache";
     };
   };
 
