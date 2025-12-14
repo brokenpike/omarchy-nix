@@ -12,7 +12,9 @@ in
       credential.credentialStore = "cache";
     };
   };
-
+  programs.git-crendential-manager = {
+    enable = true;
+  };
   programs.gh = {
     enable = true;
     gitCredentialHelper = {
