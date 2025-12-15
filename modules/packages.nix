@@ -46,7 +46,7 @@ let
       btop
       powertop
       fastfetch
-      git-git-credential-manager
+      git-credential-manager
       # GUIs
       chromium
       obsidian
